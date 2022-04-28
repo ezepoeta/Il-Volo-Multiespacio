@@ -7,11 +7,18 @@
 .header-container {
     color: antiquewhite;
     font-size: 20px;
-    background-color: #ddfcfc;
+    background-color: #caffff;
     padding: 20px 0;
     display: flex;
     justify-content: flex-end;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
+    background: linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
+    background: -webkit-linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
+    background: -moz-linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
+
 }
 
 .nav {
@@ -23,6 +30,8 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
 }
 
 .section-container {
@@ -50,9 +59,8 @@
 .frase-principal {
     color: #008cff;
     font-style: oblique;
-    font-size: 65px;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    font-family: 'Square Peg', cursive;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -65,18 +73,24 @@ ol {
 
 .shops {
     color: rgb(138, 138, 138);
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     padding: 100px 100px 100px 100px;
     font-size: 30px;
 }
 
 .stores {
-    margin: 100px 30px 50px 30px;
+    margin: 30px 30px 50px 30px;
     display: grid;
     grid-template-rows: 100px 100px;
     grid-template-columns: repeat(4, auto);
-    gap: 30px 10px;
-
+    gap: 30px 20px;
+}
+.stores-grid{
+    background-color: antiquewhite;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container {
@@ -172,6 +186,7 @@ ol {
     font-size: 50px;
     display: flex;
     justify-content: center;
+    padding: 20px 0px 20px 0px;
 }
 
 .nosotros-grid {
@@ -181,7 +196,7 @@ ol {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px 200px;
 
 }
 
@@ -293,7 +308,7 @@ ol {
     }
 
     .frase-principal {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .stores {
@@ -380,6 +395,7 @@ ol {
         color: rgb(0, 0, 0);
         font-size: 100%;
     }
+
     .inputForm {
         width: 100%;
         min-height: 40px;
@@ -417,7 +433,7 @@ ol {
     }
 
     .frase-principal {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .stores {
@@ -474,9 +490,11 @@ ol {
         grid-column: auto;
         grid-row: auto;
     }
+
     .nosotros-title {
         font-size: 3rem;
     }
+
     /* ==================================== FIN NOSOTROS TABLET ================================*/
 
     /* ==================================== INICIO CONTACTO TABLET ================================*/
@@ -502,6 +520,7 @@ ol {
         color: rgb(0, 0, 0);
         font-size: 150%;
     }
+
     .inputForm {
         width: 100%;
         min-height: 40px;
