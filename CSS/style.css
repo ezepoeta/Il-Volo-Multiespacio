@@ -11,7 +11,7 @@
     padding: 20px 0;
     display: flex;
     justify-content: flex-end;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Nova Square', cursive;
     box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
     -webkit-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
@@ -29,9 +29,8 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    
+    font-family: 'Nova Square', cursive;
+   
 }
 
 .section-container {
