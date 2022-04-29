@@ -12,9 +12,9 @@
     display: flex;
     justify-content: flex-end;
     font-family: 'Nova Square', cursive;
-    box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
-    -webkit-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: -1px 2px 17px 2px rgba(0, 0, 0, 0.51);
+    box-shadow: -1px 2px 17px 2px #0000002c;
+    -webkit-box-shadow: -1px 2px 17px 2px #0000002c;
+    -moz-box-shadow: -1px 2px 17px 2px #0000002c;
     background: linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
     background: -webkit-linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
     background: -moz-linear-gradient(to bottom, #caffff 0%, #ffffff 95%);
@@ -64,6 +64,9 @@
     align-items: flex-end;
     justify-content: center;
 }
+.animate__animated.animate__rubberBand{
+    animation-delay: 1.2s;
+}
 
 ol {
     list-style: none;
@@ -72,7 +75,6 @@ ol {
 
 .shops {
     color: rgb(138, 138, 138);
-    /* background-color: antiquewhite; */
     padding: 100px 100px 100px 100px;
     font-size: 30px;
 }
@@ -86,10 +88,14 @@ ol {
 }
 .stores-grid{
     background-color: antiquewhite;
-    border-radius: 60px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1.25s;
+}
+.stores-grid:hover{
+    border-radius: 0%;
 }
 
 .footer-container {
@@ -127,7 +133,7 @@ ol {
 
 .locales-title {
     color: #008cff;
-    font-style: italic;
+    font-family: 'Goldman', cursive;
     font-size: 60px;
     display: flex;
     justify-content: center;
@@ -170,7 +176,7 @@ ol {
 /* ================================ INICIO PROMOCIONES ======================================== */
 .promociones-title {
     color: #008cff;
-    font-style: italic;
+    font-family: 'Goldman', cursive;;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -181,7 +187,7 @@ ol {
 /* ================================ INICIO NOSOTROS ======================================== */
 .nosotros-title {
     color: #008cff;
-    font-style: italic;
+    font-family: 'Goldman', cursive;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -196,14 +202,20 @@ ol {
     grid-gap: 15px;
     grid-template-columns: 600px 600px 600px;
     grid-template-rows: 400px 400px 400px 400px 200px;
-
 }
-
+.nosotros-galeria{
+    overflow: hidden;
+}
 .nosotros-imagenes {
     width: 100%;
     position: relative;
     object-fit: fill;
     box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.699);
+    transition: all 2s;
+}
+.nosotros-imagenes:hover {
+    transform: scale(2);
+   
 }
 
 
@@ -213,7 +225,7 @@ ol {
 
 .contacto-title {
     color: #008cff;
-    font-style: italic;
+    font-family: 'Goldman', cursive;
     font-size: 70px;
     padding-bottom: 50px;
     display: flex;
