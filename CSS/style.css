@@ -65,7 +65,7 @@
     justify-content: center;
 }
 .animate__animated.animate__rubberBand{
-    animation-delay: 1.2s;
+    animation-delay: 1.4s;
 }
 
 ol {
@@ -76,7 +76,7 @@ ol {
 .shops {
     color: rgb(138, 138, 138);
     padding: 100px 100px 100px 100px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .stores {
@@ -180,6 +180,9 @@ ol {
     font-size: 50px;
     display: flex;
     justify-content: center;
+}
+.carousel-promociones{
+    margin: 55px 55px 55px 55px;
 }
 
 /* ================================ FIN PROMOCIONES ======================================== */
@@ -296,22 +299,22 @@ ol {
 @media only screen and (max-width: 576px) {
 
     /* ============================================ INDEX MOBILE========================= */
-    .header-container {
+     /* .header-container {
         font-size: 1rem;
         color: #f8f5f1;
         background-color: #d4fdef;
         padding: 1rem 0;
         justify-content: space-evenly;
         flex-direction: row;
-    }
+    } */
 
-    .menu {
+    /* .menu {
         justify-content: space-around;
-    }
+    } */
 
-    .nav {
+    /* .nav {
         width: 90%;
-    }
+     }  */
 
     .main-title {
         font-size: 3rem;
@@ -421,22 +424,22 @@ ol {
 @media only screen and (min-width: 576px) and (max-width: 992px) {
 
     /*========================================== INDEX TABLET ==============================*/
-    .header-container {
+    /* .header-container {
         font-size: 1rem;
         color: #f8f5f1;
         background-color: #bdffcb;
         padding: 1rem 0;
         justify-content: space-evenly;
         flex-direction: row;
-    }
+    } */
 
-    .menu {
+    /* .menu {
         justify-content: space-around;
-    }
+    } */
 
-    .nav {
+    /* .nav {
         width: 70%;
-    }
+    } */
 
     .main-title {
         font-size: 4rem;
