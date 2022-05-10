@@ -365,6 +365,13 @@ ol {
         font-size: 3rem;
         padding-top: 5%;
     }
+    .carousel-promociones{
+        width: 80%;
+        height: 50%;
+        object-fit:scale-down 2;
+        display: flex;
+        justify-content: center;
+    }
 
     /* ==================================== FIN PROMOCIONES MOBILE ================================*/
 
@@ -490,6 +497,13 @@ ol {
     .promociones-title {
         font-size: 3rem;
         padding-top: 5%;
+    }
+    .carousel-promociones{
+        width: 85%;
+        height: 60%;
+        object-fit: scale-down 1;
+        display: flex;
+        justify-content: center;
     }
 
     /* ==================================== FIN PROMOCIONES TABLET ================================*/
