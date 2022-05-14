@@ -132,9 +132,6 @@
 
 /* ======================================== FIN LOCALES ======================================== */
 
-
-
-
 /* ================================ INICIO PROMOCIONES ======================================== */
 .promociones-title {
     color: #008cff;
@@ -158,29 +155,9 @@
     justify-content: center;
     padding: 20px 0px 20px 0px;
 }
-
-.nosotros-grid {
-    background-color: antiquewhite;
-    color: white;
-    padding: 30px;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 400px 400px 400px 400px 200px;
-}
-.nosotros-galeria{
-    overflow: hidden;
-}
-.nosotros-imagenes {
-    width: 100%;
-    position: relative;
-    object-fit: fill;
-    box-shadow: 10px 11px 12px -8px rgba(0, 0, 0, 0.699);
-    transition: all 2s;
-}
-.nosotros-imagenes:hover {
-    transform: scale(2);
-   
+.carousel-nosotros{
+    margin: 90px 120px 90px 120px;
+    
 }
 
 
@@ -320,16 +297,7 @@
         font-size: 3rem;
     }
 
-    .nosotros-grid {
-        display: grid;
-        grid-template-rows: repeat(12, 400px);
-        grid-template-columns: 400px;
-    }
-
-    .nosotros-imagenes {
-        grid-column: auto;
-        grid-row: auto;
-    }
+   
 
     /* ==================================== FIN NOSOTROS MOBILE ================================*/
 
@@ -426,16 +394,6 @@
     /* ==================================== FIN PROMOCIONES TABLET ================================*/
 
     /* ==================================== INICIO NOSOTROS TABLET ================================*/
-    .nosotros-grid {
-        display: grid;
-        grid-template-columns: 400px 400px;
-    }
-
-    .nosotros-imagenes {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
     .nosotros-title {
         font-size: 3rem;
     }
