@@ -64,7 +64,6 @@
   align-items: center;
   transition: all 1.25s;
 }
-
 .stores-grid:hover {
   border-radius: 0%;
 }

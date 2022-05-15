@@ -55,10 +55,12 @@
     border-radius: 50%;
    @include flex-center;
     transition: all 1.25s;
+    
+    &:hover{
+        border-radius: 0%;
+    }
 }
-.stores-grid:hover{
-    border-radius: 0%;
-}
+
 .footer-container {
     background-color: nth($colores, 5);
 }
