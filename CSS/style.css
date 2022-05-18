@@ -1,3 +1,14 @@
+.boton, .boton--reset, .boton--enviar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.801);
+  border-radius: 10px;
+  transition: all 0.2s;
+  background-color: #d2ffff;
+}
+
 /* ================================= INICIO INDEX =============================================== */
 .header-container {
   color: antiquewhite;
@@ -200,7 +211,7 @@
   flex-direction: column;
 }
 
-.boton {
+.boton, .boton--reset, .boton--enviar {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -209,6 +220,16 @@
   border-radius: 10px;
   transition: all 0.2s;
   background-color: #d2ffff;
+}
+
+.boton--enviar {
+  background-color: greenyellow;
+  color: black;
+}
+
+.boton--reset {
+  background-color: tomato;
+  color: black;
 }
 
 .divForm {

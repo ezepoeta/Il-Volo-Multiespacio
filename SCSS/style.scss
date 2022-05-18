@@ -1,188 +1,322 @@
-@import '../SCSS/Base/estilosgenerales';
-@import '../SCSS/Base/listas';
-@import '../SCSS/Base/variables';
-@import '../SCSS/Base/mapas';
+@import "../SCSS/Base/estilosgenerales";
+@import "../SCSS/Base/listas";
+@import "../SCSS/Base/variables";
+@import "../SCSS/Base/mapas";
 
-@import '../SCSS/Components/footer';
-@import '../SCSS/Components/header';
+@import "../SCSS/Components/footer";
+@import "../SCSS/Components/header";
 
 /* ================================= INICIO INDEX =============================================== */
-.header-container{
-    color:nth($colores, 1);
-    background-color: nth($colores, 2);
-    @include flex-center;
-    box-shadow: $shadow;
-    background: nth($background, 1);
-    font-family: 'Nova Square', cursive;
+.header-container {
+  color: nth($colores, 1);
+  background-color: nth($colores, 2);
+  @include flex-center;
+  box-shadow: $shadow;
+  background: nth($background, 1);
+  font-family: "Nova Square", cursive;
 }
 .section-container {
-    margin: 90px 5px 140px 5px;
+  margin: 90px 5px 140px 5px;
 }
-.main-logo{
-    width: 100%;
-    padding-bottom: 80px;
-    @include flex-center;
+.main-logo {
+  width: 100%;
+  padding-bottom: 80px;
+  @include flex-center;
 }
-.main-title{
-    padding-bottom: 5%;
-    @include flex-center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: nth($colores, 3);
-    font-style: italic;
+.main-title {
+  padding-bottom: 5%;
+  @include flex-center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: nth($colores, 3);
+  font-style: italic;
 }
 
-.frase-principal{
-    color: nth($colores, 3);
-    font-family: 'Square Peg', cursive;
-    font-size: 75px;
-    @include flex-end-low;
+.frase-principal {
+  color: nth($colores, 3);
+  font-family: "Square Peg", cursive;
+  font-size: 75px;
+  @include flex-end-low;
 }
 .shops {
-    color: nth($colores, 4);
-    padding: 100px 100px 100px 100px;
-    font-size: 25px;
+  color: nth($colores, 4);
+  padding: 100px 100px 100px 100px;
+  font-size: 25px;
 }
 .stores {
-    margin: 30px 30px 50px 30px;
-    display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: repeat(4, auto);
-    gap: 30px 20px;
+  margin: 30px 30px 50px 30px;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px 20px;
 }
-.stores-grid{
-    background-color: nth($colores, 1);
-    border-radius: 50%;
-   @include flex-center;
-    transition: all 1.25s;
-    
-    &:hover{
-        border-radius: 0%;
-    }
+.stores-grid {
+  background-color: nth($colores, 1);
+  border-radius: 50%;
+  @include flex-center;
+  transition: all 1.25s;
+
+  &:hover {
+    border-radius: 0%;
+  }
 }
 
 .footer-container {
-    background-color: nth($colores, 5);
+  background-color: nth($colores, 5);
 }
 
 .map-iframe {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 
 .redes-footer {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    height: 60px;
-    align-items: flex-end;
-    font-size: 25px;
-    width: auto;
-    margin: 0% 5% 0% 85%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 60px;
+  align-items: flex-end;
+  font-size: 25px;
+  width: auto;
+  margin: 0% 5% 0% 85%;
 }
 
 .face-logo {
-    height: 50px;
+  height: 50px;
 }
 
 .insta-logo {
-    height: 50px;
+  height: 50px;
 }
-
 
 /* ================================= FIN INDEX =============================================== */
 
 /* ================================== INICIO LOCALES ========================================= */
 
 .locales-title {
-    color: #008cff;
-    font-family: 'Goldman', cursive;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 35px;
+  color: #008cff;
+  font-family: "Goldman", cursive;
+  font-size: 60px;
+  display: flex;
+  justify-content: map-get($flex, justify-content);
+  padding-bottom: 35px;
 }
 
 .locales-horarios {
-    color: #6e6e6e;
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+  color: #6e6e6e;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .locales-info-container {
-    margin: 200px 80px 200px 80px;
-    display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: repeat(3, auto);
-    gap: 30px 10px;
-
+  margin: 200px 80px 200px 80px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px 10px;
 }
 
 .locales-info {
-    border: solid 2px #b0ffe5;
-    background-color: aliceblue;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
-    text-align: center;
+  border: solid 2px #b0ffe5;
+  background-color: aliceblue;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
 }
-
 
 /* ======================================== FIN LOCALES ======================================== */
 
 /* ================================ INICIO PROMOCIONES ======================================== */
 .promociones-title {
-    color: #008cff;
-    font-family: 'Goldman', cursive;;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
+  color: #008cff;
+  font-family: "Goldman", cursive;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
-.carousel-promociones{
-    margin: 55px 55px 55px 55px;
+.carousel-promociones {
+  margin: 55px 55px 55px 55px;
 }
 
 /* ================================ FIN PROMOCIONES ======================================== */
 
 /* ================================ INICIO NOSOTROS ======================================== */
 .nosotros-title {
-    color: #008cff;
-    font-family: 'Goldman', cursive;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0px 20px 0px;
+  color: #008cff;
+  font-family: "Goldman", cursive;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
 }
-.carousel-nosotros{
-    margin: 90px 120px 90px 120px;
-    
+.carousel-nosotros {
+  margin: 90px 120px 90px 120px;
 }
-
 
 /* ================================ FIN NOSOTROS ======================================== */
 
 /* ================================ INICIO CONTACTO ======================================== */
 
 .contacto-title {
-    color: #008cff;
-    font-family: 'Goldman', cursive;
-    font-size: 70px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
+  color: #008cff;
+  font-family: "Goldman", cursive;
+  font-size: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .contacto-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  border: solid 2px;
+  margin-bottom: 100px;
+  width: 1000px;
+  box-shadow: 10px 12px 14px -8px black;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.boton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.801);
+  border-radius: 10px;
+  transition: all 0.2s;
+  background-color: #d2ffff;
+}
+.boton--enviar{
+    @extend .boton;
+    background-color: greenyellow ;
+    color: black;  
+}
+.boton--reset{
+    @extend .boton;
+    background-color: tomato;
+    color: black;
+}
+.divForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 200%;
+}
+
+.inputForm {
+  width: 100%;
+  min-height: 40px;
+  font-size: 120%;
+  text-align: center;
+}
+
+/* ================================ FIN CONTACTO ======================================== */
+
+/* ================================================== INICIO RESPONSIVE ===================================== */
+
+/* ==== MOBILE ==== */
+@media only screen and (max-width: 576px) {
+  /* ============================================ INDEX MOBILE========================= */
+
+  .main-title {
+    font-size: 3rem;
+    justify-content: center;
+  }
+
+  .frase-principal {
+    font-size: 35px;
+  }
+
+  .stores {
+    display: none;
+  }
+
+  .shops {
+    display: none;
+  }
+
+  .redes-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* =========================================== FIN INDEX MOBILE============================*/
+
+  /* ==================================== INICIO LOCALES MOBILE ================================*/
+  .locales-info-container {
+    margin: 200px 80px 200px 80px;
+    display: grid;
+    grid-template-rows: repeat(12, 150px);
+    grid-template-columns: repeat(1, auto);
+    gap: 30px 10px;
+  }
+
+  .locales-title {
+    padding-top: 5%;
+    font-size: 3rem;
+  }
+
+  .locales-horarios {
+    font-size: 2rem;
+  }
+
+  /* ==================================== FIN LOCALES MOBILE ================================*/
+
+  /* ==================================== INICIO PROMOCIONES MOBILE ================================*/
+  .promociones-title {
+    font-size: 3rem;
+    padding-top: 5%;
+  }
+  .carousel-promociones {
+    height: fit-content;
+    width: fit-content;
+    margin: 125px 10px 125px 10px;
+  }
+
+  /* ==================================== FIN PROMOCIONES MOBILE ================================*/
+
+  /* ==================================== INICIO NOSOTROS MOBILE ================================*/
+  .nosotros-title {
+    font-size: 3rem;
+  }
+  .carousel-nosotros {
+    height: fit-content;
+    width: fit-content;
+    margin: 105px 10px 105px 10px;
+  }
+
+  /* ==================================== FIN NOSOTROS MOBILE ================================*/
+
+  /* ==================================== INICIO CONTACTO MOBILE ================================*/
+  #form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,30 +324,11 @@
     background-color: antiquewhite;
     border: solid 2px;
     margin-bottom: 100px;
-    width: 1000px;
-    box-shadow: 10px 12px 14px -8px black
-}
+    width: 480px;
+    box-shadow: 10px 12px 14px -8px black;
+  }
 
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.boton {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 80%;
-    border: 2px solid rgba(0, 0, 0, 0.801);
-    border-radius: 10px;
-    transition: all 0.2s;
-    background-color: #d2ffff;
-}
-
-.divForm {
+  .divForm {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -221,244 +336,128 @@
     margin-bottom: 10px;
     width: 50%;
     color: rgb(0, 0, 0);
-    font-size: 200%;
-}
+    font-size: 100%;
+  }
 
-.inputForm {
+  .inputForm {
     width: 100%;
     min-height: 40px;
-    font-size: 120%;
+    font-size: 80%;
     text-align: center;
-}
+  }
 
-/* ================================ FIN CONTACTO ======================================== */
-
-
-/* ================================================== INICIO RESPONSIVE ===================================== */
-
-/* ==== MOBILE ==== */
-@media only screen and (max-width: 576px) {
-
-    /* ============================================ INDEX MOBILE========================= */
-
-
-    .main-title {
-        font-size: 3rem;
-        justify-content: center;
-    }
-
-    .frase-principal {
-        font-size: 35px;
-    }
-
-    .stores {
-        display: none;
-    }
-
-    .shops {
-        display: none;
-    }
-
-    .redes-footer {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    /* =========================================== FIN INDEX MOBILE============================*/
-
-    /* ==================================== INICIO LOCALES MOBILE ================================*/
-    .locales-info-container {
-        margin: 200px 80px 200px 80px;
-        display: grid;
-        grid-template-rows: repeat(12, 150px);
-        grid-template-columns: repeat(1, auto);
-        gap: 30px 10px;
-    }
-
-    .locales-title {
-        padding-top: 5%;
-        font-size: 3rem;
-    }
-
-    .locales-horarios {
-        font-size: 2rem;
-    }
-
-    /* ==================================== FIN LOCALES MOBILE ================================*/
-
-    /* ==================================== INICIO PROMOCIONES MOBILE ================================*/
-    .promociones-title {
-        font-size: 3rem;
-        padding-top: 5%;
-    }
-    .carousel-promociones{
-        height: fit-content;
-        width: fit-content;
-        margin: 125px 10px 125px 10px;
-    }
-
-    /* ==================================== FIN PROMOCIONES MOBILE ================================*/
-
-    /* ==================================== INICIO NOSOTROS MOBILE ================================*/
-    .nosotros-title {
-        font-size: 3rem;
-    }
-    .carousel-nosotros{
-        height: fit-content;
-        width: fit-content;
-        margin: 105px 10px 105px 10px;
-    }
-
-   
-
-    /* ==================================== FIN NOSOTROS MOBILE ================================*/
-
-    /* ==================================== INICIO CONTACTO MOBILE ================================*/
-    #form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: antiquewhite;
-        border: solid 2px;
-        margin-bottom: 100px;
-        width: 480px;
-        box-shadow: 10px 12px 14px -8px black
-    }
-
-    .divForm {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 50%;
-        color: rgb(0, 0, 0);
-        font-size: 100%;
-    }
-
-    .inputForm {
-        width: 100%;
-        min-height: 40px;
-        font-size: 80%;
-        text-align: center;
-    }
-
-    /* ==================================== FIN CONTACTO MOBILE ================================*/
+  /* ==================================== FIN CONTACTO MOBILE ================================*/
 }
 
 /* ==== TABLET ==== */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+  /*========================================== INDEX TABLET ==============================*/
 
-    /*========================================== INDEX TABLET ==============================*/
+  .main-title {
+    font-size: 4rem;
+    justify-content: center;
+  }
 
-    .main-title {
-        font-size: 4rem;
-        justify-content: center;
-    }
+  .frase-principal {
+    font-size: 3rem;
+  }
 
-    .frase-principal {
-        font-size: 3rem;
-    }
+  .stores {
+    display: none;
+  }
 
-    .stores {
-        display: none;
-    }
+  .shops {
+    display: none;
+  }
 
-    .shops {
-        display: none;
-    }
+  .redes-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    .redes-footer {
-        display: flex;
-        justify-content: flex-end;
-    }
+  /*======================================= FIN INDEX TABLET ========================*/
 
-    /*======================================= FIN INDEX TABLET ========================*/
+  /* ==================================== INICIO LOCALES TABLET ================================*/
 
-    /* ==================================== INICIO LOCALES TABLET ================================*/
+  .locales-info-container {
+    margin: 200px 80px 200px 80px;
+    display: grid;
+    grid-template-rows: repeat(12, 200px);
+    grid-template-columns: repeat(1, auto);
+    gap: 30px 10px;
+  }
 
-    .locales-info-container {
-        margin: 200px 80px 200px 80px;
-        display: grid;
-        grid-template-rows: repeat(12, 200px);
-        grid-template-columns: repeat(1, auto);
-        gap: 30px 10px;
-    }
+  .locales-title {
+    padding-top: 5%;
+    font-size: 3rem;
+  }
 
-    .locales-title {
-        padding-top: 5%;
-        font-size: 3rem;
-    }
+  .locales-horarios {
+    font-size: 2rem;
+  }
 
-    .locales-horarios {
-        font-size: 2rem;
-    }
+  /* ==================================== FIN LOCALES TABLET ================================*/
 
-    /* ==================================== FIN LOCALES TABLET ================================*/
+  /* ==================================== INICIO PROMOCIONES TABLET ================================*/
+  .promociones-title {
+    font-size: 3rem;
+    padding-top: 5%;
+  }
+  .carousel-promociones {
+    height: fit-content;
+    width: fit-content;
+    margin: 125px 10px 125px 10px;
+  }
 
-    /* ==================================== INICIO PROMOCIONES TABLET ================================*/
-    .promociones-title {
-        font-size: 3rem;
-        padding-top: 5%;
-    }
-    .carousel-promociones{
-        height: fit-content;
-        width: fit-content;
-        margin: 125px 10px 125px 10px;
-    }
+  /* ==================================== FIN PROMOCIONES TABLET ================================*/
 
+  /* ==================================== INICIO NOSOTROS TABLET ================================*/
+  .nosotros-title {
+    font-size: 3rem;
+  }
+  .carousel-nosotros {
+    height: fit-content;
+    width: fit-content;
+    margin: 105px 10px 105px 10px;
+  }
 
+  /* ==================================== FIN NOSOTROS TABLET ================================*/
 
-    /* ==================================== FIN PROMOCIONES TABLET ================================*/
+  /* ==================================== INICIO CONTACTO TABLET ================================*/
+  #form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: solid 2px;
+    margin-bottom: 100px;
+    width: 800px;
+    box-shadow: 10px 12px 14px -8px black;
+  }
 
-    /* ==================================== INICIO NOSOTROS TABLET ================================*/
-    .nosotros-title {
-        font-size: 3rem;
-    }
-    .carousel-nosotros{
-        height: fit-content;
-        width: fit-content;
-        margin: 105px 10px 105px 10px;
-    }
+  .divForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+  }
 
-
-    /* ==================================== FIN NOSOTROS TABLET ================================*/
-
-    /* ==================================== INICIO CONTACTO TABLET ================================*/
-    #form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: antiquewhite;
-        border: solid 2px;
-        margin-bottom: 100px;
-        width: 800px;
-        box-shadow: 10px 12px 14px -8px black
-    }
-
-    .divForm {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 50%;
-        color: rgb(0, 0, 0);
-        font-size: 150%;
-    }
-
-    .inputForm {
-        width: 100%;
-        min-height: 40px;
-        font-size: 100%;
-        text-align: center;
-    }
+  .inputForm {
+    width: 100%;
+    min-height: 40px;
+    font-size: 100%;
+    text-align: center;
+  }
 }
 
 /* ==================================== FIN CONTACTO TABLET ================================*/
 /* ==== DESKTOP ==== */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* =============================================== FIN RESPONSIVE ======================================= */
