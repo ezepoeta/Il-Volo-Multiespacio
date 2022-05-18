@@ -291,12 +291,22 @@
         font-size: 3rem;
         padding-top: 5%;
     }
+    .carousel-promociones{
+        height: fit-content;
+        width: fit-content;
+        margin: 125px 10px 125px 10px;
+    }
 
     /* ==================================== FIN PROMOCIONES MOBILE ================================*/
 
     /* ==================================== INICIO NOSOTROS MOBILE ================================*/
     .nosotros-title {
         font-size: 3rem;
+    }
+    .carousel-nosotros{
+        height: fit-content;
+        width: fit-content;
+        margin: 105px 10px 105px 10px;
     }
 
    
@@ -392,6 +402,13 @@
         font-size: 3rem;
         padding-top: 5%;
     }
+    .carousel-promociones{
+        height: fit-content;
+        width: fit-content;
+        margin: 125px 10px 125px 10px;
+    }
+
+
 
     /* ==================================== FIN PROMOCIONES TABLET ================================*/
 
@@ -399,6 +416,12 @@
     .nosotros-title {
         font-size: 3rem;
     }
+    .carousel-nosotros{
+        height: fit-content;
+        width: fit-content;
+        margin: 105px 10px 105px 10px;
+    }
+
 
     /* ==================================== FIN NOSOTROS TABLET ================================*/
 
