@@ -312,6 +312,11 @@
     width: fit-content;
     margin: 105px 10px 105px 10px;
   }
+  .carousel-item{
+    height: 400px;
+    width: auto;
+    object-fit:scale-down 12;
+  }
 
   /* ==================================== FIN NOSOTROS MOBILE ================================*/
 
@@ -395,6 +400,9 @@
   .locales-horarios {
     font-size: 2rem;
   }
+  .main-locales{
+    margin-bottom: 150px;
+  }
 
   /* ==================================== FIN LOCALES TABLET ================================*/
 
@@ -419,6 +427,11 @@
     height: fit-content;
     width: fit-content;
     margin: 105px 10px 105px 10px;
+  }
+  .carousel-item{
+    height: 500px;
+    width: auto;
+    object-fit:scale-down 12;
   }
 
   /* ==================================== FIN NOSOTROS TABLET ================================*/
