@@ -39,6 +39,10 @@
   font-size: 75px;
   @include flex-end-low;
 }
+.animate__animated.animate__rubberBand{
+  animation-delay: 1.5s;
+}
+
 .shops {
   color: nth($colores, 4);
   padding: 100px 100px 100px 100px;
@@ -68,20 +72,24 @@
 
 .map-iframe {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.redes-footer{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10rem;
+}
+.links-footer{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding-right: 8rem;
+  font-weight: 600;
 }
 
-.redes-footer {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  height: 60px;
-  align-items: flex-end;
-  font-size: 25px;
-  width: auto;
-  margin: 0% 5% 0% 85%;
-}
 
 .face-logo {
   height: 50px;
