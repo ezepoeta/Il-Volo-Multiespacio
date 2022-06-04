@@ -170,9 +170,27 @@
   justify-content: center;
 }
 
-.carousel-promociones {
-  margin: 55px 55px 55px 55px;
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+  padding: 20px 20px 100px 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.52);
+}
+
+.img-2 {
+  grid-row: span 2;
+}
+
+.img-6 {
+  grid-column: span 3;
 }
 
 /* ================================ FIN PROMOCIONES ======================================== */
@@ -339,10 +357,15 @@
     padding-top: 5%;
   }
 
-  .carousel-promociones {
-    height: fit-content;
-    width: fit-content;
-    margin: 125px 10px 125px 10px;
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+  }
+
+  .gallery-item {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   /* ==================================== FIN PROMOCIONES MOBILE ================================*/
@@ -361,6 +384,14 @@
     height: 400px;
     width: auto;
     object-fit: scale-down 12;
+  }
+
+  .img-2 {
+    display: none;
+  }
+
+  .img-6 {
+    display: none;
   }
 
   /* ==================================== FIN NOSOTROS MOBILE ================================*/
@@ -452,10 +483,23 @@
     padding-top: 5%;
   }
 
-  .carousel-promociones {
-    height: fit-content;
-    width: fit-content;
-    margin: 125px 10px 125px 10px;
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .gallery-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .img-2 {
+    display: none;
+  }
+
+  .img-6 {
+    display: none;
   }
 
   /* ==================================== FIN PROMOCIONES TABLET ================================*/
